@@ -1,0 +1,295 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Dream Audio</title>
+    <style>
+        /* EXERCISE 1
+            For every Album we'd like to have a consistent style.
+            Therefore you should create a class for each of the following elements:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+
+            ...to make sure you give every album the same consistent appearance.
+         */
+
+         .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 70px;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: midnightblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: midnightblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#tapestry.img {
+    width:10px;
+    
+}
+
+body {
+    background-color: lightblue;
+}
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <h1>Dream Audio</h1>
+
+    <hr>
+    <h2 class="container-fluid">Top 4 Albums:</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 bg-info"><img style="padding-top: 5%;" src="https://images-na.ssl-images-amazon.com/images/I/61bneFOiWoL.jpg" width="100px"><br><p style="color: white;"><strong>DIVIDE</strong><br>>Ed Sheeran</p></div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 bg-warning"><img style="padding-top: 5%;" src="https://images-na.ssl-images-amazon.com/images/I/41rQnzLBiBL.jpg" width="100px"><br><p style="color: white;"><strong>NIGHT VISIONS</strong><br>>Imagine Dragons</p></div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 bg-danger"><img style="padding-top: 5%;" src="https://images-na.ssl-images-amazon.com/images/I/71jgK-10dbS._SL1200_.jpg" width="100px"><br><p style="color: white;"><strong>LIFE BY MISADVENTURE</strong><br>>Rag'n'Bone Man</p></div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 bg-primary"><img style="padding-top: 5%;" src="https://images-na.ssl-images-amazon.com/images/I/814TDEjLaFL._SL1425_.jpg" width="100px"><p style="color: white;"><strong>AN AWESOME WAVE</strong><br>>alt-J</p></div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 class="container-fluid">Album Reviews:</h2>
+    <br>
+
+    <div class="card container-fluid col-sm-9 col-md-9 col-lg-9 bg-warning">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41rQnzLBiBL.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;"><strong>NIGHT VISIONS</strong></h5>
+          <p class="card-text"><ul style="color: white;">
+              <li>BAND: Imagine Dragons</li>
+              <li>DURATION: 43m51s</li>
+              <li>GENRE: Rock / Pop rock‎ / ‎EDM‎ / Hip hop‎;‎</li>
+            </ul></p>
+            <p style="color: white;">TRACKLIST:</p>
+            <ol style="color: white;">
+                <li>Radioactive</li>
+                <li>Tiptoe</li>
+                <li>It's Time</li>
+                <li>...</li>
+            </ol>
+          <a href="https://www.amazon.com/Night-Visions-Imagine-Dragons/dp/B0092MKTL2/ref=sr_1_2?dchild=1&keywords=night+vision+album&qid=1629809961&sr=8-2" target="blank" class="btn btn-primary">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2 class="container-fluid">Favourite Artist:</h2>
+      <br>
+  
+      <div class="card container-fluid col-sm-9 col-md-9 col-lg-9 bg-danger">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71jgK-10dbS._SL1200_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;"><strong>RAG'N'BONE MAN</strong></h5>
+            <p class="card-text"><ul style="color: white;">
+                <li>YEARS ACTIVE: 2010 - Present</li>
+                <li>BORN: Uckfield, United Kingdom</li>
+                <li>GENRES: New blues / Blues / Blues rock / RnB / Soul / Hip hop‎</li>
+              </ul></p>
+              <p style="color: white;">BEST SONGS:</p>
+              <ol style="color: white;">
+                  <li>Human</li>
+                  <li>Skin</li>
+                  <li>All You Ever Wanted</li>
+                  <li>...</li>
+              </ol>
+            <a href="https://en.wikipedia.org/wiki/Rag%27n%27Bone_Man" target="blank" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+  
+        <hr>
+
+      <h2 class="container-fluid">Album Tapestry:</h2>
+
+      <div id="tapestry" class="container-fluid">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81InYXq1VDL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71kOQrqROTL._SL1300_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81i-lxb6clL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71hVRbO%2BKHL._SL1400_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81dUVKQDBEL._SL1200_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71MrcL3-MhL._SL1400_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71HWqbh0BLL._SL1425_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81mmKB%2B6zaL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/913aFDI0sRL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/91j5pX9RdHL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/91ffeWzPNpL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71Y24VlCZGL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81UIwvVJ2qL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81iYdOXSwwL._SL1400_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/81Zo1OBJNjL._SL1428_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/71DUFxaoLGL._SL1500_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/713N4ZIYsEL._SL1200_.jpg" width="100%"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><img src="https://images-na.ssl-images-amazon.com/images/I/51XKSleIUvL.jpg" width="100%"></div>
+            
+        </div>
+
+    </div>
+
+
+      <footer class="container-fluid">Copyright 2021 John Blox</footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<!--
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you will have a short biography section of yourself, the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Even the most experienced designers need inspiration.
+Spend some time surfing the web researching the best way of representing the albums you love.
+Could be the Amazon way, the Spotify or Apple music way or any other music collection out there.
+
+HINT: Manage your time in order to finish the structure and responsiveness before focusing on the details.
+-->
+   
+    <!-- EXERCISE 2/
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page.
+        -->
+
+    <!-- EXERCISE 3/
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+
+    <!-- EXERCISE 4/
+            Create a section for the album reviews.
+            Pick one of your favourite albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Duration
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+    <!-- EXERCISE 5
+            Worst album list! Choose the albums you dislike or some you think are overrated and list it
+            in this "hall of shame" chart! 
+        -->
+
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are a fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+    <!-- EXERCISE 7/
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
+            Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
+        -->
+
+    <!-- EXERCISE 8/
+            Implement a footer with some information / social links.
+        -->
+
+    <!-- ############ EXTRA:
+        EXERCISE 9
+            Create an album details area which will be toggled on and off by clicking on the album image.
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+
+    <!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS are present on the page.
+        -->
